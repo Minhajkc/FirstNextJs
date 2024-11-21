@@ -18,8 +18,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed bottom- left-0 right-0 bg-transparent text-gray-900 px-10 pt-3 z-50">
-      <div className="max-w-md mx-auto flex justify-between items-center px-5 py-2 border-2 border-blue-700 bg-white rounded-xl">
+    <nav className="fixed lg:top-0 bottom-0 left-0 right-0 bg-transparent text-gray-900 px-10 pt-3 z-50">
+      <div className="max-w-md mx-auto flex justify-between items-center px-5 py-2   bg-white rounded-xl">
         {/* Desktop/Mobile Navigation */}
         <div className="flex w-full justify-between items-center">
           {NavLinks.map(({ href, label, icon: Icon }) => (
