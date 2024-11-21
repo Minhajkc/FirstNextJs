@@ -5,6 +5,7 @@ import Projects from "./components/Projects.jsx";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import {  FaWhatsapp} from 'react-icons/fa6';
+import Achievements from "./components/Achievements";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
    <About/>
    <Skills/>
    <Projects/>
+   <Achievements/>
    <ContactForm/>
    <Footer/>
    </div>

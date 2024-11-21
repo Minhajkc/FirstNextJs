@@ -54,7 +54,7 @@ const ContactForm = () => {
       };
   return (
     <div>
-      <section className="py-2 pb-20 px-4 bg-gradient-to-b " id="contact">
+      <section className="py- pb-20 px-4  " id="contact">
 <h2 className="text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
            Contact Me
         </h2>
