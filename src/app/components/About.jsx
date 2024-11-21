@@ -10,18 +10,18 @@ function About() {
               About Me
           </h2>
           <div className="flex flex-col md:flex-row items-center justify-between space-y-12 md:space-y-0 md:space-x-12">
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 ">
               <img 
                   src='images/Minhajreal.png'
-                  alt="Minhaj" 
-                  className="rounded-full w-64 h-74 object-cover mx-auto shadow-lg border-2 border-blue-500"
+                  alt="Minhaj kc" 
+                  className="rounded-xl hover:scale-105 transition-transform duration-300 w-64 h-74 object-cover mx-auto shadow-lg border-2 border-blue-500"
               />
             </div>
             <div className="md:w-1/2 space-y-6 lg:text-left md:text-left text-center">
               <p className="text-lg leading-relaxed text-gray-300">
                   As a <span className="text-blue-400 font-semibold">MERN Stack Developer</span> and <span className="text-purple-400 font-semibold">UI/UX Designer</span>, I blend technical expertise with creative flair. My journey in the world of web development has been driven by a passion for crafting seamless digital experiences.
               </p>
-              <p className="text-lg leading-relaxed text-gray-300">
+              <p className="text-lg leading-relaxed text-gray-300 ">
                   I specialize in building scalable web applications and designing intuitive user interfaces that not only look great but also solve real-world problems.
               </p>
               <p className="text-lg leading-relaxed text-gray-300">

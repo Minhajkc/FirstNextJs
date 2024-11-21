@@ -34,8 +34,11 @@ const Navbar = () => {
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
-         <div className='mt-10 ml-6'>
-                <img className="h-5 w-auto" src="/images/Logo.png" alt="Logo" />
+         < div className='mt-10 ml-6'>
+         <a href="/">
+         < img className="h-5 w-auto" src="/images/Logo.png" alt="Minhaj kc Logo" />
+         </a>
+            
                 </div>
         <div className="p-6">
           <button 
