@@ -1,8 +1,9 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram, FaFacebook, FaTelegram } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram,FaWhatsapp, FaFacebook, FaTelegram } from 'react-icons/fa6';
 import CodingBackground from './CodingBackground';
+
 
 const skills = ["Full Stack Developer", "MERN Stack Expert", "UI/UX Enthusiast", "Problem Solver"];
 
@@ -24,6 +25,15 @@ const HeroSection = () => {
 
   return (
     <section className="flex flex-col items-center justify-center min-h-screen p-5 text-center relative overflow-hidden bg-gray-900 text-white" id='home'>
+            <a
+  href="https://wa.me/917034936080" 
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-800 transition-colors duration-300"
+>
+  <FaWhatsapp size={30} />
+</a>
+        
       <div className="absolute inset-0 z-0">
         <CodingBackground />
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=400&width=400')] opacity-10"></div>
@@ -31,7 +41,7 @@ const HeroSection = () => {
       
       <div className="z-10 relative">
         <h1 className="text-4xl sm:text-6xl font-bold mb-4 animate-fade-in-down">
-          Hello, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Minhaj</span>
+          Hello, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Minhaj Kc</span>
         </h1>
         <p className={`text-xl sm:text-2xl mb-3 transition-opacity duration-500 ${fadeClass}`}>
           <span className="typing-effect">{skills[currentSkillIndex]}</span>
@@ -42,7 +52,7 @@ const HeroSection = () => {
           Let's bring your digital ideas to life!
         </p>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
-          <a href="#contact" className="px-4 sm:px-8 py-2 sm:py-3 animate-bounce bg-white hover:bg-blue-700 text-gray-900 transition-all duration-300 rounded-full text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          <a href="#contact" className="px-4 sm:px-8 py-2 sm:py-3 animate-bounce bg-white hover:bg-gray-300 text-gray-900 transition-all duration-300 rounded-full text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             Get In Touch
           </a>
           <a href="#projects" className="px-4 sm:px-8 py-2 sm:py-3 bg-transparent border-2 border-blue-600 hover:bg-white hover:text-gray-900 transition-all duration-300 rounded-full text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
