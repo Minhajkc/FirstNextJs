@@ -60,7 +60,7 @@ const ContactForm = () => {
         </h2>
     <div className="max-w-4xl mx-auto bg-gray-800 border-2 border-blue-700 rounded-2xl shadow-2xl overflow-hidden">
         <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2  p-8  bg-white text-gray-900">
+            <div className="md:w-1/2  p-8  bg-gray-500 text-white">
                 <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
                 <p className="mb-6">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
                 <div className="space-y-4">
@@ -87,53 +87,55 @@ const ContactForm = () => {
 </div>
             </div>
             <div className="md:w-1/2 p-8">
-            {loading ? (
-         <div className="text-center text-blue-500">
-         Please wait, form is submitting...
-       </div>
-      ):null}
-            <form className="space-y-6" id="gform" method="POST" onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your Name"
-          className="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-white"
-          value={formData.name}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your Email"
-          className="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-white"
-          value={formData.email}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">Message</label>
-        <textarea
-          id="message"
-          placeholder="Your Message"
-          name="message"
-          rows="4"
-          className="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-white"
-          value={formData.message}
-          onChange={handleChange}
-        ></textarea>
-      </div>
-      <button type="submit" className="w-full px-6 py-3 bg-white text-gray-900 hover:bg-gray-300 transition-all duration-300 rounded-lg font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-        Send Message
-      </button>
-    </form>
-            </div>
+  <form className="space-y-6" id="gform" method="POST" onSubmit={handleSubmit}>
+    <div>
+      <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your Name"
+        className="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-white"
+        value={formData.name}
+        onChange={handleChange}
+      />
+    </div>
+    <div>
+      <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your Email"
+        className="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-white"
+        value={formData.email}
+        onChange={handleChange}
+      />
+    </div>
+    <div>
+      <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">Message</label>
+      <textarea
+        id="message"
+        placeholder="Your Message"
+        name="message"
+        rows="4"
+        className="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-white"
+        value={formData.message}
+        onChange={handleChange}
+      ></textarea>
+    </div>
+    <button 
+      type="submit" 
+      disabled={loading}
+      className={`w-full px-6 py-3 rounded-lg font-bold shadow-lg transition-all duration-300 transform hover:-translate-y-1 ${
+        loading ? "bg-gray-400 text-gray-700 cursor-not-allowed" : "bg-white text-gray-900 hover:bg-gray-300"
+      }`}
+    >
+      {loading ? "Submitting..." : "Send Message"}
+    </button>
+  </form>
+</div>
+
         </div>
     </div>
     <svg

@@ -35,8 +35,8 @@ const Footer = () => {
             </a>
         </div>
     </div>
-    <div className="text-center mt-8 text-sm">
-        <p>© {new Date().getFullYear()} Minhaj. All rights reserved.</p>
+    <div className="text-center mt-8 text-xs p-">
+        <p>© {new Date().getFullYear()} All rights reserved. Website Designed by Minhaj kc Using Next.js</p>
     </div>
 </footer>
     </div>
