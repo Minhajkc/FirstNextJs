@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram,FaWhatsapp, FaFacebook, F
 import CodingBackground from './CodingBackground';
 
 
-const skills = ["Full Stack Developer", "MERN Stack Expert", "UI/UX Enthusiast", "Problem Solver"];
+const skills = ["Full Stack Developer", "MERN Stack Expert", "UI/UX Enthusiast"];
 
 const HeroSection = () => {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
@@ -36,7 +36,7 @@ const HeroSection = () => {
         
       <div className="absolute inset-0 z-0">
         <CodingBackground />
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=400&width=400')] opacity-10"></div>
+       
       </div>
       
       <div className="z-10 relative">

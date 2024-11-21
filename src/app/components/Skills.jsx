@@ -31,7 +31,8 @@ const Skills = () => {
                     'Tailwind CSS & Bootstrap', 
                     'Responsive Design',
                     'Figma & Sketch',
-                    'Wireframing & Prototyping'
+                    'Wireframing & Prototyping',
+                    'Next.js'
                 ]} 
             />
 

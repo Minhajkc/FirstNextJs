@@ -7,14 +7,14 @@ const Projects = () => {
   const projectss = [
     { 
       id: 1,
-      title: "FruitBasket-E-Commerce",
+      title: "FruitBasket E-Commerce",
       image: "/images/Fruitbasket.png",
       description: 'FruitBasket eCommerce application is a lightweight, Node.js-powered platform for buying and selling fruits online. Using MongoDB for data storage and Handlebars.js for templating, it offers a seamless shopping experience.',
       link: 'https://Fruitbasket.site',
       technologies: [ 'Node.js', 'MongoDB', 'Express','HBS']
     },
     { 
-      id: 3,
+      id: 2,
       title: "Eduprops E-Learning",
       image: "/images/Eduprops.png",
       description: 'EduProps is an innovative e-learning web application built with React, MongoDB, Express, and Node. It features three interfaces: students, admin, and mentor, providing comprehensive tools for education management.',
@@ -22,13 +22,39 @@ const Projects = () => {
       technologies: ['React','Node.js', 'MongoDB', 'Express']
     },
     { 
-      id: 2,
+      id: 3,
       title: "RestoHub-Order-taking-App",
       image: "/images/Restohub.png",
       description: 'RestoHub is a restaurant management application designed to streamline operations between administrators, waiters, and chefs. It offers distinct functionalities for each role.',
       link: 'https://resto-hub.vercel.app/',
       technologies: ['React']
     },
+    { 
+      id: 4,
+      title: "Sales-Enterprise-App-Using-React",
+      image: "/images/Enterprice.png",
+      description: 'A React mini web application built in React for managing product inventory, sales tracking, and revenue calculation. It offers distinct functionalities for Admin and sales man.',
+      link: 'https://sales-enterprise-app-react.vercel.app/',
+      technologies: ['React']
+    }
+    ,
+    { 
+      id: 5,
+      title: "Income and Expense Calculator",
+      image: "/images/cal.png",
+      description: 'This simple web application helps you track and manage your income and expenses. Using JavaScript, this tool allows you to keep an eye on your financial activities with ease.Check out the live demo of the Income and Expense Calculator',
+      link: 'https://minhajkc.github.io/Income-Expense-Calculator-using-js/',
+      technologies: ['JavaScript']
+    }
+    ,
+    { 
+      id: 6,
+      title: "Post-Planner-Using-React",
+      image: "/images/pp.png",
+      description: 'A powerful and intuitive React application for scheduling and managing your social media posts efficiently. This tool is designed to help users plan, organize, and track their social media content with ease.Easily schedule posts by adding text, images, and links. Specify the date and time for each post',
+      link: 'https://post-planner-using-react.vercel.app/',
+      technologies: ['React']
+    }
   ];
 
   return (

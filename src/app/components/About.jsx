@@ -19,8 +19,8 @@ function About() {
                         className="rounded-full w-64 h-74 object-cover mx-auto shadow-lg border-2 border-blue-500"
                     />
                 </div>
-                <div className="md:w-1/2 space-y-6">
-                    <p className="text-lg leading-relaxed text-gray-300">
+                <div className="md:w-1/2 space-y-6 lg:text-left md:text-left text-center">
+                    <p className="text-lg  leading-relaxed text-gray-300">
                         As a <span className="text-blue-400 font-semibold">MERN Stack Developer</span> and <span className="text-purple-400 font-semibold">UI/UX Designer</span>, I blend technical expertise with creative flair. My journey in the world of web development has been driven by a passion for crafting seamless digital experiences.
                     </p>
                     <p className="text-lg leading-relaxed text-gray-300">
@@ -35,7 +35,7 @@ function About() {
                             <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
                             <span>Innovative Thinker</span>
                         </div>
-                        <div className="flex items-center space-x-2">
+                        <div className="flex items-center space-x-2 ">
                             <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                             <span>Fast Learner</span>
                         </div>

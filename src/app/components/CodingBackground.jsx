@@ -4,7 +4,7 @@ import React from 'react';
 
 const CodingBackground = () => {
   return (
-    <div className="absolute inset-0 opacity-55  animate-pulse overflow-hidden">
+    <div className="absolute inset-0 opacity-35  animate-pulse overflow-hidden">
       {/* Code lines */}
       {[...Array(10)].map((_, i) => (
         <div 
