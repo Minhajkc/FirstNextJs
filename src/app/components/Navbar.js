@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Home, Info, Briefcase, Phone, Menu, X } from 'lucide-react';
+import { Home, Info, Briefcase, Phone } from 'lucide-react';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed bottom- left-0 right-0 bg-gray-800 text-white shadow-lg z-50">
+    <nav className="fixed bottom- left-0 right-0 bg-transparent text-white px-10 pt-3 z-50">
       <div className="max-w-md mx-auto flex justify-between items-center px-4 py-3">
         {/* Desktop/Mobile Navigation */}
         <div className="flex w-full justify-between items-center">
