@@ -18,7 +18,7 @@ const geistMono = localFont({
 export const metadata = {
   title: "Minhaj KC | Full Stack Developer | Mern | MERN",
   description: "Minhaj KC - Full Stack Developer and UI/UX Designer specializing in the MERN stack.",
-  keywords: "Minhaj KC, Full Stack Developer, MERN Stack, UI UX Designer, Kozhikode",
+  keywords: "Minhaj KC, MinhajKC, Minhaj Developer, Full Stack Developer, Kozhikode, Best Developer in Kozhikode, minhajkc.com, minhaj kc, minhaj Kc",
 };
 
 export default function RootLayout({ children }) {
