@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Minhaj KC | Full Stack Developer | Mern | MERN",
+  title: "Minhaj KC | Full Stack Developer | UI/UX Designer | MERN",
   description: "Minhaj KC - Full Stack Developer and UI/UX Designer specializing in the MERN stack.",
   keywords: "Minhaj KC, MinhajKC, Minhaj Developer, Full Stack Developer, Kozhikode, Best Developer in Kozhikode, minhajkc.com, minhaj kc, minhaj Kc",
 };
