@@ -22,8 +22,6 @@ const Achievements = () => {
             <h3 className="text-xl font-semibold mb-2">Google Certification</h3>
             <p className="text-sm text-gray-400 p-4">Achievement for the successful completion of <strong>The Fundamentals of Digital Marketing</strong> certification exam on 01/11/2020</p>
           </div>
-
-          {/* You can add more achievement cards here if needed */}
          
         </div>
       </div>
