@@ -13,7 +13,7 @@ const Achievements = () => {
         <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-x-12 md:space-y-0 ">
           <div className="flex flex-col items-center border-2 border-blue-500 bg-gray-900 p-6 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105">
             <Image
-              src="/images/achi.PNG" // Replace with the path to your image (e.g., Google certificate)
+              src="/images/achi.PNG" 
               alt="Google Achievement"
               width={450}
               height={250}
