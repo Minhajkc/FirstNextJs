@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <meta property="og:description" content={metadata.description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://minhajkc.vercel.app" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.PNG" />
         <link rel="canonical" href="https://minhajkc.vercel.app" />
       </head>
       
