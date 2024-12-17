@@ -1,9 +1,27 @@
 "use client"
 import React from 'react'
+import Head from "next/head";
 
 function About() {
   return (
     <div>
+        <Head>
+        <title>Minhaj KC - MERN Stack Developer & UI/UX Designer</title>
+        <meta
+          name="description"
+          content="Learn about Minhaj KC, a MERN Stack Developer and UI/UX Designer with a passion for crafting seamless digital experiences."
+        />
+        <meta name="keywords" content="Minhaj KC, MERN Developer, UI/UX Designer, Full Stack Developer, About Minhaj KC, Who is Minhaj KC" />
+        <meta name="author" content="Minhaj KC" />
+        <meta property="og:title" content="Minhaj KC - MERN Stack Developer" />
+        <meta
+          property="og:description"
+          content="Discover Minhaj KC's expertise as a MERN Stack Developer and UI/UX Designer."
+        />
+        <meta property="og:image" content="/images/Minhajreal.png" />
+        <meta property="og:url" content="https://minhajkc.vercel.app/about" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
        <section className="py-20 px-4 bg-gradient-to-l" id='about'>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
