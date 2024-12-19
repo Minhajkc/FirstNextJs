@@ -61,7 +61,7 @@ function About() {
               </div>
               <div className="mt-8">
                 <a 
-                  href="/cv/Minhajkc.pdf" 
+                  href="/cv/MhdMinhajkc.pdf" 
                   download 
                   className="px-6 py-2 text-white bg-blue-500 rounded-lg shadow hover:bg-blue-600 transition duration-300"
                 >
