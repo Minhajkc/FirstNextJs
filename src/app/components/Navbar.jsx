@@ -74,7 +74,7 @@ const Navbar = () => {
             ))}
             <div className="mt-30 pt-10">
               <a
-                href="/cv/Minhajkc.pdf"
+                href="/cv/MhdMinhajkc.pdf"
                 download
                 className="px-6 py-2 text-white border-2 border-white rounded-lg shadow hover:bg-blue-600 transition duration-300"
               >
