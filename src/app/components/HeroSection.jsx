@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram,FaWhatsapp, FaFacebook, F
 import CodingBackground from './CodingBackground';
 
 
-const skills = ["Full Stack Developer", "MERN Stack Expert", "UI/UX Enthusiast"];
+const skills = ["Web Engineer","Full Stack Developer", "MERN Stack Expert", "UI/UX Enthusiast"];
 
 const HeroSection = () => {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
