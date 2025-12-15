@@ -7,7 +7,7 @@ const Projects = () => {
     { 
       id: 7,
       title: "Ayadi School Website",
-      image: "/images/AyadiSchool.png",
+      image: "/images/ayadischool.png",
       description: 'Ayadi School website is a full-fledged platform for online school management and admissions. Built with Next.js and Firebase, it allows parents to register students online and access course details.',
       link: 'https://ayadischool.com',
       technologies: ['Next.js', 'Firebase', 'Tailwind CSS']
@@ -15,7 +15,7 @@ const Projects = () => {
     { 
       id: 8,
       title: "Emadi Business School",
-      image: "/images/EmadiSchool.png",
+      image: "/images/Emadischool.png",
       description: 'Emadi Business School website is a modern educational platform built with Next.js, Ant Design, and Firebase. It features course management, student registration, and admin dashboards for smooth operations.',
       link: 'https://emadibschool.com',
       technologies: ['Next.js', 'Firebase', 'Ant Design', 'Tailwind CSS']
