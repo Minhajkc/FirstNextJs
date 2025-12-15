@@ -32,13 +32,13 @@ const ContactForm = () => {
     try {
       await emailjs.send(
         "service_9hd1kfq",          // ✅ Your SERVICE ID
-        "template_xxxxxxx",         // ❗ Replace with TEMPLATE ID
+        "template_zfkna0b",         // ❗ Replace with TEMPLATE ID
         {
           name: formData.name,
           email: formData.email,
           message: formData.message,
         },
-        "YOUR_PUBLIC_KEY"           // ❗ Replace with PUBLIC KEY
+        "F00m3fDSWyL-3kpJk"           // ❗ Replace with PUBLIC KEY
       );
 
       alert("Message sent successfully!");
