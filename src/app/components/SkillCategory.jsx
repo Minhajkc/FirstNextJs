@@ -1,18 +1,30 @@
 const SkillCategory = ({ title, icon, skills }) => (
-    <div className="bg-gray-800 rounded-lg p-6 border-2 border-blue-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
-        
-        <h3 className="text-2xl font-semibold mb-4 flex items-center">
-            <span className="mr-2">{icon}</span>
-            {title}
-        </h3>
-        <div className="flex flex-wrap gap-2 ">
-            {skills.map((skill) => (
-                <span key={skill} className="px-3 py-2 bg-gray-200  text-gray-900  rounded-full text-sm font-medium hover:bg-gray-300 transition-colors cursor-default">
-                    {skill}
-                </span>
-            ))}
-        </div>
+  <div className="relative group rounded-xl p-[1px] bg-gradient-to-r from-blue-500/40 to-purple-500/40 hover:from-blue-500 hover:to-purple-500 transition-all duration-500">
+    
+    <div className="bg-gray-900/90 backdrop-blur-xl rounded-xl p-6 h-full shadow-lg">
+      
+      <h3 className="text-xl font-semibold mb-5 flex items-center gap-3 text-white">
+        <span className="text-blue-400 text-2xl">{icon}</span>
+        <span className="tracking-wide">{title}</span>
+      </h3>
+
+      <div className="flex flex-wrap gap-3">
+        {skills.map((skill) => (
+          <span
+            key={skill}
+            className="px-4 py-1.5 text-sm font-medium rounded-full
+                       bg-white/10 text-gray-200 backdrop-blur-md
+                       border border-white/10
+                       hover:bg-white/20 hover:text-white
+                       transition-all duration-300 cursor-default"
+          >
+            {skill}
+          </span>
+        ))}
+      </div>
+
     </div>
+  </div>
 );
 
-export default SkillCategory
+export default SkillCategory;
