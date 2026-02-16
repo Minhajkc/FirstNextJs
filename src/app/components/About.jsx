@@ -44,8 +44,8 @@ function About() {
 
             <div className="md:w-1/2 space-y-6 lg:text-left md:text-left text-center">
               <p className="text-lg leading-relaxed text-gray-300">
-                I am a <span className="text-blue-400 font-semibold">Chief Technology Officer (CTO)</span> and
-                <span className="text-purple-400 font-semibold"> Full-Stack Engineer</span> specializing in
+                I am a <span className="text-blue-400 font-semibold">Full-Stack Engineer</span> and
+                <span className="text-purple-400 font-semibold"> Former Chief Technology Officer (CTO)</span> specializing in
                 building scalable, production-ready web platforms using the MERN stack, Firebase, and
                 cloud-native architectures.
               </p>
