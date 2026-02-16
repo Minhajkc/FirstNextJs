@@ -88,7 +88,7 @@ function About() {
 
               <div className="mt-8">
                 <a
-                  href="/cv/Minhaj_KC_CTO_Full_Stack_Engineer.pdf"
+                  href="/cv/Full Stack Engineer Minhaj Kc.pdf"
                   download
                   className="px-6 py-2 text-white bg-blue-500 rounded-lg shadow hover:bg-blue-600 transition duration-300"
                 >
