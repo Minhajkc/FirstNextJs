@@ -7,7 +7,7 @@ const Projects = () => {
   { 
     id: 9,
     title: "Wolff Global",
-    image: "/images/wolffglobal.png",
+    image: "/images/Wolffglobal.png",
     description: "Wolff Global is a professional corporate website built with Next.js, featuring responsive design, optimized performance, and modern UI components. It showcases the company's services, global presence, and business solutions.",
     link: "https://wolffglobal.ae",
     technologies: ["Next.js", "Tailwind CSS", "Firebase"]
