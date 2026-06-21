@@ -3,74 +3,80 @@ import React from 'react'
 import { FaGithub } from 'react-icons/fa6';
 
 const Projects = () => {
-  const projectss = [
-    { 
-      id: 7,
-      title: "Ayadi School Website",
-      image: "/images/ayadischool.png",
-      description: 'Ayadi School website is a full-fledged platform for online school management and admissions. Built with Next.js and Firebase, it allows parents to register students online and access course details.',
-      link: 'https://ayadischool.com',
-      technologies: ['Next.js', 'Firebase', 'Tailwind CSS']
-    },
-    { 
-      id: 8,
-      title: "Emadi Business School",
-      image: "/images/Emadischool.png",
-      description: 'Emadi Business School website is a modern educational platform built with Next.js, Ant Design, and Firebase. It features course management, student registration, and admin dashboards for smooth operations.',
-      link: 'https://emadibschool.com',
-      technologies: ['Next.js', 'Firebase', 'Ant Design', 'Tailwind CSS']
-    },
-     { 
-      id: 2,
-      title: "Eduprops E-Learning",
-      image: "/images/Eduprops.png",
-      description: 'EduProps is an innovative e-learning web application built with React, MongoDB, Express, and Node. It features three interfaces: students, admin, and mentor, providing comprehensive tools for education management.',
-      link: 'https://eduprops.vercel.app',
-      technologies: ['React','Node.js', 'MongoDB', 'Express']
-    },
-    { 
-      id: 1,
-      title: "FruitBasket E-Commerce",
-      image: "/images/Fruitbasket.png",
-      description: 'FruitBasket eCommerce application is a lightweight, Node.js-powered platform for buying and selling fruits online. Using MongoDB for data storage and Handlebars.js for templating, it offers a seamless shopping experience.',
-      link: 'https://Fruitbasket.site',
-      technologies: [ 'Node.js', 'MongoDB', 'Express','HBS']
-    },
-   
-    { 
-      id: 3,
-      title: "RestoHub-Order-taking-App",
-      image: "/images/Restohub.png",
-      description: 'RestoHub is a restaurant management application designed to streamline operations between administrators, waiters, and chefs. It offers distinct functionalities for each role.',
-      link: 'https://resto-hub.vercel.app/',
-      technologies: ['React']
-    },
-    { 
-      id: 4,
-      title: "Sales-Enterprise-App-Using-React",
-      image: "/images/Enterprice.png",
-      description: 'A React mini web application built in React for managing product inventory, sales tracking, and revenue calculation. It offers distinct functionalities for Admin and sales man.',
-      link: 'https://sales-enterprise-app-react.vercel.app/',
-      technologies: ['React']
-    },
-    { 
-      id: 5,
-      title: "Income and Expense Calculator",
-      image: "/images/cal.png",
-      description: 'This simple web application helps you track and manage your income and expenses. Using JavaScript, this tool allows you to keep an eye on your financial activities with ease. Check out the live demo of the Income and Expense Calculator.',
-      link: 'https://minhajkc.github.io/Income-Expense-Calculator-using-js/',
-      technologies: ['JavaScript']
-    },
-    { 
-      id: 6,
-      title: "Post-Planner-Using-React",
-      image: "/images/pp.png",
-      description: 'A powerful and intuitive React application for scheduling and managing your social media posts efficiently. This tool is designed to help users plan, organize, and track their social media content with ease.',
-      link: 'https://post-planner-using-react.vercel.app/',
-      technologies: ['React']
-    },
-    
-  ];
+ const projectss = [
+  { 
+    id: 9,
+    title: "Wolff Global",
+    image: "/images/wolffglobal.png",
+    description: "Wolff Global is a professional corporate website built with Next.js, featuring responsive design, optimized performance, and modern UI components. It showcases the company's services, global presence, and business solutions.",
+    link: "https://wolffglobal.ae",
+    technologies: ["Next.js", "Tailwind CSS", "Firebase"]
+  },
+  { 
+    id: 7,
+    title: "Ayadi School Website",
+    image: "/images/ayadischool.png",
+    description: "Ayadi School website is a full-fledged platform for online school management and admissions. Built with Next.js and Firebase, it allows parents to register students online and access course details.",
+    link: "https://ayadischool.com",
+    technologies: ["Next.js", "Firebase", "Tailwind CSS"]
+  },
+  { 
+    id: 8,
+    title: "Emadi Business School",
+    image: "/images/Emadischool.png",
+    description: "Emadi Business School website is a modern educational platform built with Next.js, Ant Design, and Firebase. It features course management, student registration, and admin dashboards for smooth operations.",
+    link: "https://emadibschool.com",
+    technologies: ["Next.js", "Firebase", "Ant Design", "Tailwind CSS"]
+  },
+  { 
+    id: 2,
+    title: "Eduprops E-Learning",
+    image: "/images/Eduprops.png",
+    description: "EduProps is an innovative e-learning web application built with React, MongoDB, Express, and Node. It features three interfaces: students, admin, and mentor, providing comprehensive tools for education management.",
+    link: "https://eduprops.vercel.app",
+    technologies: ["React", "Node.js", "MongoDB", "Express"]
+  },
+  { 
+    id: 1,
+    title: "FruitBasket E-Commerce",
+    image: "/images/Fruitbasket.png",
+    description: "FruitBasket eCommerce application is a lightweight, Node.js-powered platform for buying and selling fruits online. Using MongoDB for data storage and Handlebars.js for templating, it offers a seamless shopping experience.",
+    link: "https://Fruitbasket.site",
+    technologies: ["Node.js", "MongoDB", "Express", "HBS"]
+  },
+  { 
+    id: 3,
+    title: "RestoHub-Order-taking-App",
+    image: "/images/Restohub.png",
+    description: "RestoHub is a restaurant management application designed to streamline operations between administrators, waiters, and chefs. It offers distinct functionalities for each role.",
+    link: "https://resto-hub.vercel.app/",
+    technologies: ["React"]
+  },
+  { 
+    id: 4,
+    title: "Sales-Enterprise-App-Using-React",
+    image: "/images/Enterprice.png",
+    description: "A React mini web application built for managing product inventory, sales tracking, and revenue calculation. It offers distinct functionalities for Admin and Salesman roles.",
+    link: "https://sales-enterprise-app-react.vercel.app/",
+    technologies: ["React"]
+  },
+  { 
+    id: 5,
+    title: "Income and Expense Calculator",
+    image: "/images/cal.png",
+    description: "This simple web application helps you track and manage your income and expenses. Using JavaScript, this tool allows you to monitor your financial activities with ease.",
+    link: "https://minhajkc.github.io/Income-Expense-Calculator-using-js/",
+    technologies: ["JavaScript"]
+  },
+  { 
+    id: 6,
+    title: "Post-Planner-Using-React",
+    image: "/images/pp.png",
+    description: "A powerful and intuitive React application for scheduling and managing social media posts efficiently. It helps users plan, organize, and track content with ease.",
+    link: "https://post-planner-using-react.vercel.app/",
+    technologies: ["React"]
+  }
+];
 
   return (
     <div>

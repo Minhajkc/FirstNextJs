@@ -43,11 +43,14 @@ function About() {
             </div>
 
             <div className="md:w-1/2 space-y-6 lg:text-left md:text-left text-center">
-              <p className="text-lg leading-relaxed text-gray-300">
-                I am a <span className="text-blue-400 font-semibold">Full-Stack Engineer</span> and
-                <span className="text-purple-400 font-semibold"> Former Chief Technology Officer (CTO)</span> specializing in
-                building scalable, production-ready web platforms using the MERN stack, Firebase, and
-                cloud-native architectures.
+             <p className="text-lg leading-relaxed text-gray-300">
+                I am a{" "}
+                <span className="text-blue-400 font-semibold">
+                  Full Stack Engineer
+                </span>{" "}
+                with over 2 years of experience building scalable web
+                applications using React.js, Next.js, Node.js, Express.js,
+                MongoDB, Firebase, and AWS.
               </p>
 
               <p className="text-lg leading-relaxed text-gray-300">
@@ -88,7 +91,7 @@ function About() {
 
               <div className="mt-8">
                 <a
-                  href="/cv/Full Stack Engineer Minhaj Kc.pdf"
+                  href="/cv/FullStack Engineer Minhaj Kc.pdf"
                   download
                   className="px-6 py-2 text-white bg-blue-500 rounded-lg shadow hover:bg-blue-600 transition duration-300"
                 >

@@ -15,7 +15,6 @@ import CodingBackground from "./CodingBackground";
 const roles = [
   "Full-Stack Engineer (MERN)",
   "Product Architect & System Designer",
-  "Former Chief Technology Officer (CTO)",
   "Startup & SaaS Platform Builder",
 ];
 

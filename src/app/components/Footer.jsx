@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
 
           <p className="text-sm font-medium">
-            CTO & Full-Stack Engineer (MERN)
+            Full-Stack Engineer (MERN)
           </p>
           <p className="text-xs text-gray-400">
             Building scalable web platforms & startup products

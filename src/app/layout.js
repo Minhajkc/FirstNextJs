@@ -90,7 +90,7 @@ export default function RootLayout({ children }) {
               sameAs: [
                 "https://www.linkedin.com/in/minhaj-kc-a7b118308",
                 "https://github.com/minhajkc",
-                "https://www.instagram.com/mnhaj.__",
+                "https://www.instagram.com/minhaj.kc",
                 "https://www.facebook.com/muhammedminhaj.kc",
                 // Add more verified profiles (Twitter/X, etc.) if you have them
               ],
