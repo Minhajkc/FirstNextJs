@@ -2,6 +2,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Use Node.js 26.x for local development and deployment. The `engines.node` setting
+in `package.json` also selects Node.js 26.x for new Vercel deployments.
+
 First, run the development server:
 
 ```bash

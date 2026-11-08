@@ -2,6 +2,9 @@
   "name": "Minhaj kc Portfolio Website",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "26.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
