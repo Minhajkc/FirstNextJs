@@ -41,12 +41,11 @@ const footerLinks = [
 ];
 
 const Footer = () => (
-  <footer className="relative isolate overflow-hidden border-t border-white/[0.08] bg-[#080b12]/40 px-5 pb-7 pt-16 text-slate-400 backdrop-blur-xl sm:px-8 sm:pt-20">
+  <footer className="relative isolate overflow-hidden border-t border-white/[0.08] bg-[#080b12]/40 px-5 pb-7 pt-16 text-slate-400 sm:px-8 sm:pt-20">
     <div
       aria-hidden="true"
       className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
     >
-      <div className="absolute -right-32 -top-56 h-[32rem] w-[48rem] rounded-full bg-blue-600/[0.08] blur-[140px]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.04),transparent_60%)]" />
     </div>
 

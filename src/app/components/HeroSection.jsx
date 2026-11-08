@@ -95,27 +95,6 @@ const HeroSection = () => {
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [fadeClass, setFadeClass] = useState("opacity-100");
   const roleTimeout = useRef(null);
-  const tiltRef = useRef(null);
-
-  const handleTilt = (event) => {
-    const node = tiltRef.current;
-    if (
-      !node ||
-      event.pointerType !== "mouse" ||
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
-      return;
-    }
-    const rect = event.currentTarget.getBoundingClientRect();
-    const x = (event.clientX - rect.left) / rect.width - 0.5;
-    const y = (event.clientY - rect.top) / rect.height - 0.5;
-    node.style.transform = `perspective(1000px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg)`;
-  };
-
-  const resetTilt = () => {
-    if (tiltRef.current) tiltRef.current.style.transform = "";
-  };
-
   useEffect(() => {
     const interval = setInterval(() => {
       setFadeClass("opacity-0");
@@ -140,8 +119,6 @@ const HeroSection = () => {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
       >
-        <div className="absolute -left-40 top-10 h-96 w-96 rounded-full bg-blue-600/15 blur-[120px]" />
-        <div className="absolute -right-32 bottom-0 h-[30rem] w-[30rem] rounded-full bg-violet-600/10 blur-[140px]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.06),transparent_55%)]" />
       </div>
 
@@ -156,34 +133,23 @@ const HeroSection = () => {
         <span>Let&apos;s talk</span>
       </a>
 
-      <div className="mx-auto grid w-full max-w-7xl items-center gap-14 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16">
-        <div className="relative z-10 max-w-2xl">
-          <div
-            style={{ animationDelay: "0ms" }}
-            className="animate-rise glass-subtle mb-7 inline-flex items-center gap-2.5 rounded-full px-4 py-2 text-sm text-slate-300"
-          >
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-50" />
-              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400" />
-            </span>
-            Available for select projects
-          </div>
+      <div className="mx-auto grid w-full max-w-7xl grid-cols-[minmax(0,1fr)] items-center gap-14 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] lg:gap-16">
+        <div className="relative z-10 min-w-0 max-w-2xl">
+         
 
           <p
             style={{ animationDelay: "80ms" }}
-            className="animate-rise mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-blue-300"
+            className="animate-rise mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-white"
           >
             Hello, I&apos;m
           </p>
           <h1
             style={{ animationDelay: "160ms" }}
-            className="animate-rise text-5xl font-semibold leading-[1.05] tracking-[-0.055em] sm:text-6xl lg:text-7xl"
+            className="bg-gradient-to-r from-blue-300 via-indigo-300 to-violet-300 bg-clip-text text-transparent animate-rise text-5xl font-semibold leading-[1.05] tracking-[-0.055em] sm:text-6xl lg:text-7xl"
           >
-            Minhaj
+            Minhaj Kc
             <br />
-            <span className="bg-gradient-to-r from-blue-300 via-indigo-300 to-violet-300 bg-clip-text text-transparent">
-              KC<span className="text-white">.</span>
-            </span>
+           
           </h1>
 
           <p
@@ -211,7 +177,7 @@ const HeroSection = () => {
               (skill) => (
                 <span
                   key={skill}
-                  className="glass-subtle rounded-full px-3.5 py-2 transition hover:-translate-y-0.5 hover:border-blue-300/30 hover:text-white"
+                  className="glass-subtle rounded-full px-3.5 py-2 transition hover:-translate-y-0.5 hover:border-blue-300/30 hover:text-white text-[9px]"
                 >
                   {skill}
                 </span>
@@ -241,13 +207,13 @@ const HeroSection = () => {
 
           <div
             style={{ animationDelay: "560ms" }}
-            className="animate-rise mt-10 flex items-center gap-5"
+            className="animate-rise mt-10 flex flex-wrap items-center gap-x-5 gap-y-4"
           >
             <span className="text-xs font-medium uppercase tracking-[0.18em] text-slate-500">
               Find me on
             </span>
             <span aria-hidden="true" className="h-px w-8 bg-white/15" />
-            <div className="flex items-center gap-2.5">
+            <div className="flex flex-wrap items-center gap-1 sm:gap-2.5">
               {socialLinks.map(({ label, href, Icon }) => (
                 <a
                   key={label}
@@ -266,36 +232,20 @@ const HeroSection = () => {
 
         <div
           style={{ animationDelay: "250ms" }}
-          onPointerMove={handleTilt}
-          onPointerLeave={resetTilt}
-          className="animate-rise relative mx-auto w-full max-w-[27rem] lg:max-w-none"
+          className="animate-rise relative mx-auto w-full min-w-0 max-w-[27rem] lg:max-w-none"
         >
           <div
-            aria-hidden="true"
-            className="absolute -inset-5 sq-xl bg-gradient-to-br from-blue-500/25 via-indigo-500/5 to-violet-500/25 blur-2xl"
-          />
-          <div
-            ref={tiltRef}
             role="img"
             aria-label="Illustration of a web application being built with Next.js, Node.js, and MongoDB"
-            className="glass sq-xl relative min-h-[38rem] overflow-hidden transition-transform duration-200 ease-out will-change-transform"
+            className="glass sq-xl relative overflow-hidden"
           >
             <div
               aria-hidden="true"
               className="absolute inset-0 bg-[linear-gradient(rgba(148,163,184,0.055)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.055)_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:linear-gradient(to_bottom,black,transparent_90%)]"
             />
-            <div
-              aria-hidden="true"
-              className="absolute -right-20 top-1/4 h-64 w-64 rounded-full bg-blue-500/15 blur-[90px]"
-            />
-            <div
-              aria-hidden="true"
-              className="absolute -left-20 bottom-0 h-56 w-56 rounded-full bg-violet-500/10 blur-[90px]"
-            />
-
-            <div className="absolute inset-0 flex flex-col p-5 sm:p-7">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2.5">
+            <div className="relative flex min-h-[34rem] flex-col p-4 sm:min-h-[38rem] sm:p-7">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div className="flex min-w-0 items-center gap-2.5">
                   <span className="glass-subtle sq-sm flex h-9 w-9 items-center justify-center text-blue-200">
                     <Terminal className="h-4 w-4" />
                   </span>
@@ -331,7 +281,7 @@ const HeroSection = () => {
                 <div className="space-y-2 px-3 py-4 font-mono text-[10px] leading-4 sm:px-5 sm:py-5 sm:text-xs">
                   {codeLines.map((line, index) => (
                     <div key={index} className="flex min-w-0">
-                      <span className="mr-4 w-4 shrink-0 select-none text-right text-slate-600">
+                      <span className="mr-1 w-4 shrink-0 select-none text-right text-slate-600 sm:mr-4">
                         {index + 1}
                       </span>
                       <code className="truncate">
@@ -381,7 +331,7 @@ const HeroSection = () => {
                 ))}
               </div>
 
-              <div className="mt-auto flex items-center justify-between gap-3 pb-6 pt-5">
+              <div className="mt-auto flex flex-wrap items-center justify-between gap-3 pb-6 pt-5">
                 <div className="flex items-center gap-2 text-xs text-slate-400">
                   <Globe2 className="h-4 w-4 text-violet-300" />
                   From idea to production
@@ -393,7 +343,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div className="glass-strong sq-md animate-float absolute -bottom-9 left-6 px-4 py-3 sm:px-5">
+          <div className="glass-strong sq-md absolute -bottom-9 left-6 px-4 py-3 sm:px-5">
             <p className="flex items-center gap-2 text-xs text-slate-400">
               <Zap className="h-3.5 w-3.5 text-amber-300" />
               Focused on

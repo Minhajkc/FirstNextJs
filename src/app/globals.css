@@ -59,16 +59,6 @@ html {
   }
 }
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
 @keyframes blink {
   0%,
   49% {
@@ -103,9 +93,6 @@ html {
 .animate-rise {
   animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
 .animate-blink {
   animation: blink 1s step-end infinite;
 }
@@ -114,33 +101,6 @@ html {
 }
 .animate-fade-in-fast {
   animation: fade-in 0.2s ease-out both;
-}
-
-@keyframes drift-a {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(8vw, 10vh, 0) scale(1.15);
-  }
-}
-
-@keyframes drift-b {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(-10vw, -8vh, 0) scale(1.1);
-  }
-}
-
-.animate-drift-a {
-  animation: drift-a 26s ease-in-out infinite;
-}
-.animate-drift-b {
-  animation: drift-b 32s ease-in-out infinite;
 }
 
 /* Squircle corners: smooth superellipse where supported, rounded fallback elsewhere */
@@ -184,31 +144,23 @@ html {
     rgba(255, 255, 255, 0.085),
     rgba(255, 255, 255, 0.025)
   );
-  -webkit-backdrop-filter: blur(20px) saturate(150%);
-  backdrop-filter: blur(20px) saturate(150%);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14),
     0 24px 60px -28px rgba(0, 0, 0, 0.7);
 }
 .glass-subtle {
   background: rgba(255, 255, 255, 0.045);
-  -webkit-backdrop-filter: blur(12px) saturate(140%);
-  backdrop-filter: blur(12px) saturate(140%);
   border: 1px solid rgba(255, 255, 255, 0.09);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 .glass-strong {
-  background: rgba(12, 17, 27, 0.72);
-  -webkit-backdrop-filter: blur(26px) saturate(165%);
-  backdrop-filter: blur(26px) saturate(165%);
+  background: rgba(18, 24, 37, 0.97);
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1),
     0 30px 80px -30px rgba(0, 0, 0, 0.8);
 }
 .glass-field {
   background: rgba(6, 9, 15, 0.5);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25);
 }
@@ -232,12 +184,9 @@ html {
     scroll-behavior: auto;
   }
   .animate-rise,
-  .animate-float,
   .animate-blink,
   .animate-toast-in,
-  .animate-fade-in-fast,
-  .animate-drift-a,
-  .animate-drift-b {
+  .animate-fade-in-fast {
     animation: none;
   }
 }

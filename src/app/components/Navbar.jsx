@@ -42,10 +42,10 @@ const sectionIds = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [progress, setProgress] = useState(0);
   const [showTop, setShowTop] = useState(false);
   const [activeId, setActiveId] = useState("home");
   const sidebarRef = useRef(null);
+  const progressRef = useRef(null);
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -58,12 +58,20 @@ const Navbar = () => {
 
   useEffect(() => {
     let frame = 0;
+    let topButtonVisible = false;
     const update = () => {
       frame = 0;
       const scrollable =
         document.documentElement.scrollHeight - window.innerHeight;
-      setProgress(scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0);
-      setShowTop(window.scrollY > 700);
+      if (progressRef.current) {
+        const progress = scrollable > 0 ? window.scrollY / scrollable : 0;
+        progressRef.current.style.transform = `scaleX(${Math.max(0, Math.min(1, progress))})`;
+      }
+      const shouldShowTop = window.scrollY > 700;
+      if (shouldShowTop !== topButtonVisible) {
+        topButtonVisible = shouldShowTop;
+        setShowTop(shouldShowTop);
+      }
     };
     const onScroll = () => {
       if (!frame) frame = requestAnimationFrame(update);
@@ -104,15 +112,21 @@ const Navbar = () => {
         className="fixed inset-x-0 top-0 z-[60] h-0.5 bg-transparent"
       >
         <div
+          ref={progressRef}
           className="h-full origin-left bg-gradient-to-r from-blue-400 via-indigo-400 to-violet-400"
-          style={{ transform: `scaleX(${progress / 100})` }}
+          style={{ transform: "scaleX(0)" }}
         />
       </div>
 
       <button
         type="button"
         onClick={() =>
-          window.scrollTo({ top: 0, behavior: "smooth" })
+          window.scrollTo({
+            top: 0,
+            behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+              ? "instant"
+              : "smooth",
+          })
         }
         aria-label="Back to top"
         tabIndex={showTop ? 0 : -1}
@@ -139,7 +153,7 @@ const Navbar = () => {
       <div
         className={`fixed inset-0 z-50 transition ${
           isOpen
-            ? "pointer-events-auto bg-black/50 backdrop-blur-md"
+            ? "pointer-events-auto bg-black/70"
             : "pointer-events-none bg-transparent"
         }`}
         aria-hidden={!isOpen}

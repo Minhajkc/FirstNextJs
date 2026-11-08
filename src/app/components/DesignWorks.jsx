@@ -112,7 +112,7 @@ function DesignWorks() {
           role="dialog"
           aria-modal="true"
           aria-label={`${designWorks[activeIndex].title}, image ${activeIndex + 1} of ${designWorks.length}`}
-          className="animate-fade-in-fast fixed inset-0 z-[70] flex items-center justify-center bg-black/70 p-4 backdrop-blur-xl sm:p-8"
+          className="animate-fade-in-fast fixed inset-0 z-[70] flex items-center justify-center bg-black/90 p-4 sm:p-8"
           onClick={close}
         >
           <button

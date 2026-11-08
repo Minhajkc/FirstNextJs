@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
           content="Best full stack engineer & former CTO in Kozhikode, Kerala | MERN, Next.js, Firebase expert | Scalable apps & startup solutions"
         />
         <meta name="twitter:image" content="/images/Minhajreal.png" />
-        <meta name="twitter:creator" content="@minhajkc" /> {/* Add your real handle if available */}
+        <meta name="twitter:creator" content="@minhajkc" />
 
         <link rel="icon" href="/favicon.PNG" />
         <link rel="canonical" href="https://minhajkc.vercel.app" />

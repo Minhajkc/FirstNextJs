@@ -105,12 +105,6 @@ const ContactForm = () => {
       className="relative isolate overflow-hidden px-5 py-24 sm:px-8 sm:py-28"
       id="contact"
     >
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
-      >
-        <div className="absolute left-1/2 top-1/3 h-[30rem] w-[45rem] -translate-x-1/2 rounded-full bg-blue-600/[0.07] blur-[140px]" />
-      </div>
       <div className="mx-auto max-w-7xl">
         <Reveal className="mb-12 max-w-2xl sm:mb-14">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-blue-300">
@@ -127,10 +121,6 @@ const ContactForm = () => {
 
         <Reveal delay={100} className="glass sq-xl grid p-2.5 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="sq-lg glass-subtle relative flex flex-col overflow-hidden bg-gradient-to-br from-blue-500/15 via-transparent to-violet-500/15 p-6 sm:p-9 lg:p-10">
-            <div
-              aria-hidden="true"
-              className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-blue-500/10 blur-3xl"
-            />
             <div className="relative">
               <span className="glass-subtle inline-flex items-center gap-2 rounded-full !border-emerald-300/25 !bg-emerald-300/10 px-3 py-1.5 text-xs font-medium text-emerald-200">
                 <Check className="h-3.5 w-3.5" aria-hidden="true" />

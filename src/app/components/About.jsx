@@ -50,14 +50,6 @@ function About() {
         className="relative isolate overflow-hidden px-5 py-24 sm:px-8 sm:py-28"
         id="about"
       >
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
-        >
-          <div className="absolute -left-40 top-1/4 h-96 w-96 rounded-full bg-blue-600/[0.08] blur-[120px]" />
-          <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-violet-600/[0.08] blur-[120px]" />
-        </div>
-
         <div className="mx-auto max-w-7xl">
           <Reveal className="mb-12 max-w-2xl sm:mb-16">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-blue-300">
