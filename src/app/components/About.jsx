@@ -1,10 +1,27 @@
 "use client";
+
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
+import Reveal from "./Reveal";
+import {
+  ArrowDown,
+  ArrowDownToLine,
+  Boxes,
+  GraduationCap,
+  Lightbulb,
+  Zap,
+} from "lucide-react";
+
+const strengths = [
+  { label: "Problem solver", Icon: Lightbulb },
+  { label: "Systems thinker", Icon: Boxes },
+  { label: "Fast learner", Icon: Zap },
+];
 
 function About() {
   return (
-    <div>
+    <div className="text-white">
       <Head>
         <title>Minhaj KC | CTO & Full-Stack Engineer (MERN)</title>
         <meta
@@ -16,8 +33,10 @@ function About() {
           content="Minhaj KC, CTO, Full Stack Engineer, MERN Stack Developer, Product Architect, Startup Engineer, System Design"
         />
         <meta name="author" content="Minhaj KC" />
-
-        <meta property="og:title" content="Minhaj KC | CTO & Full-Stack Engineer" />
+        <meta
+          property="og:title"
+          content="Minhaj KC | CTO & Full-Stack Engineer"
+        />
         <meta
           property="og:description"
           content="CTO and Full-Stack Engineer experienced in building scalable web platforms, leading products from idea to deployment."
@@ -27,93 +46,139 @@ function About() {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <section className="py-20 px-4 bg-gradient-to-l" id="about">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-            About Me
-          </h2>
+      <section
+        className="relative isolate overflow-hidden px-5 py-24 sm:px-8 sm:py-28"
+        id="about"
+      >
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
+        >
+          <div className="absolute -left-40 top-1/4 h-96 w-96 rounded-full bg-blue-600/[0.08] blur-[120px]" />
+          <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-violet-600/[0.08] blur-[120px]" />
+        </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-between space-y-12 md:space-y-0 md:space-x-12">
-            <div className="md:w-1/2">
-              <img
+        <div className="mx-auto max-w-7xl">
+          <Reveal className="mb-12 max-w-2xl sm:mb-16">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-blue-300">
+              A little about me
+            </p>
+            <h2 className="text-4xl font-semibold tracking-[-0.045em] sm:text-5xl">
+              The person behind
+              <span className="bg-gradient-to-r from-blue-300 to-violet-300 bg-clip-text text-transparent">
+                {" "}
+                the products.
+              </span>
+            </h2>
+            <p className="mt-4 max-w-xl text-base leading-7 text-slate-400 sm:text-lg">
+              I bring product thinking and engineering together to build
+              software that works in the real world.
+            </p>
+          </Reveal>
+
+          <div className="grid items-stretch gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:gap-8">
+            <Reveal className="glass sq-xl group flex p-2">
+              <div className="sq-lg relative min-h-[24rem] flex-1 overflow-hidden bg-slate-900 sm:min-h-[32rem]">
+              <Image
                 src="/images/Minhajreal.png"
                 alt="Muhammed Minhaj KC"
-                className="rounded-xl hover:scale-105 transition-transform duration-300 w-64 h-74 object-cover mx-auto shadow-lg border-2 border-blue-500"
+                fill
+                sizes="(max-width: 1024px) 100vw, 36vw"
+                className="object-cover object-[center_22%] grayscale-[35%] transition duration-700 group-hover:scale-[1.03]"
               />
-            </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#080b12]/80 via-transparent to-transparent" />
+              <div className="glass-strong sq-md absolute inset-x-3 bottom-3 p-4 sm:inset-x-4 sm:bottom-4 sm:p-5">
+                <p className="text-sm font-medium text-slate-300">
+                  Full-Stack Engineer
+                </p>
+                <p className="mt-1 text-2xl font-semibold tracking-tight">
+                  Minhaj KC
+                </p>
+                <p className="mt-1 text-sm text-slate-400">
+                  Kozhikode, Kerala, India
+                </p>
+              </div>
+              </div>
+            </Reveal>
 
-            <div className="md:w-1/2 space-y-6 lg:text-left md:text-left text-center">
-             <p className="text-lg leading-relaxed text-gray-300">
-                I am a{" "}
-                <span className="text-blue-400 font-semibold">
-                  Full Stack Engineer
-                </span>{" "}
-                with over 2 years of experience building scalable web
-                applications using React.js, Next.js, Node.js, Express.js,
-                MongoDB, Firebase, and AWS.
-              </p>
+            <Reveal delay={120} className="glass sq-xl flex flex-col p-6 sm:p-9 lg:p-10">
+              <div className="space-y-5 text-[15px] leading-7 text-slate-400 sm:text-base sm:leading-8">
+                <p>
+                  I&apos;m a{" "}
+                  <span className="font-semibold text-blue-200">
+                    Full-Stack Engineer
+                  </span>{" "}
+                  with 3+ years of experience building scalable web
+                  applications using React.js, Next.js, Node.js, Express.js,
+                  MongoDB, Firebase, and AWS.
+                </p>
+                <p>
+                  My work focuses on{" "}
+                  <span className="font-medium text-slate-200">
+                    system design, product architecture, and startup execution
+                  </span>
+                  . I&apos;ve led products end-to-end—from idea validation and
+                  technical planning to development and deployment—with an
+                  emphasis on scalability, performance, and real business
+                  impact.
+                </p>
+              </div>
 
-              <p className="text-lg leading-relaxed text-gray-300">
-                My work focuses on <strong>system design, product architecture, and startup execution</strong>.
-                I have led products end-to-end — from idea validation and technical planning to development,
-                deployment, and growth — with a strong emphasis on scalability, performance, and real
-                business impact.
-              </p>
+              <div className="my-7 h-px bg-white/10 sm:my-8" />
 
-              <p className="text-lg leading-relaxed text-gray-300">
-                I hold a <span className="text-green-400 font-semibold">Bachelor of Computer Applications (BCA)</span>{" "}
-                from the University of Calicut, which provided a strong foundation in computer science,
-                software engineering principles, and problem-solving.
-              </p>
-
-              <div className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
-                <div className="flex items-center space-x-2">
-                  <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span>Problem Solver</span>
+              <div className="glass-subtle sq-md flex items-start gap-4 p-4 sm:p-5">
+                <div className="glass-subtle sq-sm flex h-11 w-11 shrink-0 items-center justify-center text-blue-300">
+                  <GraduationCap className="h-5 w-5" aria-hidden="true" />
                 </div>
-
-                <div className="flex items-center space-x-2">
-                  <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0" />
-                  </svg>
-                  <span>System Thinker</span>
-                </div>
-
-                <div className="flex items-center space-x-2">
-                  <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                  <span>Fast Learner</span>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+                    Education
+                  </p>
+                  <p className="mt-1 font-semibold text-slate-100">
+                    Bachelor of Computer Applications
+                  </p>
+                  <p className="mt-1 text-sm text-slate-400">
+                    University of Calicut
+                  </p>
                 </div>
               </div>
 
-              <div className="mt-8">
+              <div className="mt-6 flex flex-wrap gap-2.5">
+                {strengths.map(({ label, Icon }) => (
+                  <span
+                    key={label}
+                    className="glass-subtle inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-sm text-slate-300 transition hover:-translate-y-0.5 hover:border-blue-300/30 hover:text-white"
+                  >
+                    <Icon
+                      className="h-4 w-4 text-blue-300"
+                      aria-hidden="true"
+                    />
+                    {label}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-auto pt-8">
                 <a
                   href="/cv/FullStack Engineer Minhaj Kc.pdf"
                   download
-                  className="px-6 py-2 text-white bg-blue-500 rounded-lg shadow hover:bg-blue-600 transition duration-300"
+                  className="sq-md inline-flex items-center justify-center gap-2 bg-gradient-to-br from-blue-400 to-blue-600 px-5 py-3 font-semibold text-white shadow-lg shadow-blue-950/40 ring-1 ring-inset ring-white/20 transition hover:-translate-y-0.5 hover:from-blue-300 hover:to-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-300"
                 >
-                  Download CV
+                  <ArrowDownToLine className="h-4 w-4" aria-hidden="true" />
+                  Download my CV
                 </a>
               </div>
-            </div>
+            </Reveal>
           </div>
 
-          <div className="mt-16 flex justify-center animate-bounce">
-            <svg
-              className="w-6 h-6 text-white"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </div>
+          <a
+            href="#Skills"
+            aria-label="Scroll to skills section"
+            className="mx-auto mt-12 flex w-fit items-center gap-2 text-xs uppercase tracking-[0.2em] text-slate-500 transition hover:text-slate-300"
+          >
+            What I bring
+            <ArrowDown className="h-3.5 w-3.5" aria-hidden="true" />
+          </a>
         </div>
       </section>
     </div>
